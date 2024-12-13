@@ -29,7 +29,7 @@ const { stats, type } = defineProps({
     <a-row :gutter="20">
       <a-col :span="6" :xs="24" :sm="24" :md="6" :lg="6" :sl="6">
         <div class="hero-card all" :class="type === 'all' ? 'is-active' :''" @click="handleChangeType('all')">
-          <div class="title">服务器总数</div>
+          <div class="title">总数</div>
           <div class="value">
             <div class="status" style="background: #005fe7;"></div>
             <span class="num">{{stats.total}} 台</span>
@@ -56,7 +56,7 @@ const { stats, type } = defineProps({
       </a-col>
       <a-col :span="6" :xs="24" :sm="24" :md="6" :lg="6" :sl="6">
         <div class="hero-card">
-          <div class="title">网络情况</div>
+          <div class="title">网络概况 </div>
           <div class="value" style="display: block;">
             <div>
               流量
